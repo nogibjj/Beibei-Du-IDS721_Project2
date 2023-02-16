@@ -11,3 +11,4 @@ Kubernetes based Continuous Delivery Create a customized Docker container
 3. Set-ups: Makefile, CI/CD, virtual environments, etc
 4. Coding part
 5. Deployment
+* Planing doc: [doc] {https://docs.google.com/document/d/1SMkQSX9lCwID7ROtmD5sWQYg53w-REIM2b3GPReCgN4/edit}
