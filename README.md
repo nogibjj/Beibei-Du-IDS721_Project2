@@ -12,3 +12,9 @@ Kubernetes based Continuous Delivery Create a customized Docker container
 4. Coding part
 5. Deployment
 * Planing doc: [doc] {https://docs.google.com/document/d/1SMkQSX9lCwID7ROtmD5sWQYg53w-REIM2b3GPReCgN4/edit}
+
+## Rust Setup
+```
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+source "$HOME/.cargo/env"
+```
