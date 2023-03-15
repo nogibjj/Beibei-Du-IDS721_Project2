@@ -17,4 +17,5 @@ Kubernetes based Continuous Delivery Create a customized Docker container
 ```
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 source "$HOME/.cargo/env"
+cargo new ids721_proj2_cousera
 ```
