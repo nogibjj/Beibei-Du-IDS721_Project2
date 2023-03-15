@@ -21,7 +21,7 @@ cargo new ids721_proj2_cousera
 ```
 ## Docker Image
 ```
-docker build -t my_app .
-docker run -p 8000:8000 my_app
+docker build -t rmd_course .
+docker run -p 8000:8000 rmd_course
 
 ```
