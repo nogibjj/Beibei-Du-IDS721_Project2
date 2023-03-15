@@ -19,3 +19,9 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 source "$HOME/.cargo/env"
 cargo new ids721_proj2_cousera
 ```
+## Docker Image
+```
+docker build -t my_app .
+docker run -p 8000:8000 my_app
+
+```
