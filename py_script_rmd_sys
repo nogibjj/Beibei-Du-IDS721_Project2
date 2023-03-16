@@ -1,0 +1,66 @@
+
+# Import packages
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import TfidfVectorizer
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv("Coursera_cleaned.csv")
+# ## Recommender System
+
+
+# Extract features from the text using TF-IDF vectorization
+vectorizer = TfidfVectorizer()
+text_features = vectorizer.fit_transform(data['Info'])
+
+# Compute the cosine similarity matrix
+cosine_similarities = cosine_similarity(text_features)
+
+# Define a function to get recommendations based on a given course name
+
+
+def get_recommendations(title, n=10):
+    # Get the index of the the course name: i.e., Python Programming Essentials is in the 16th row
+    idx = df[df['Course Name'] == title].index[0]
+
+    # Cosine similarity scores with the provided course (a total of data.shape[0] values)
+    # enumerate provides the index and the value and making it to a list
+    sim_scores = list(enumerate(cosine_similarities[idx]))
+
+    # Sort the courses based on the similarity scores
+    # with the largest similarity score in a descending order
+    sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
+
+    # Get the top n most similar movies (excluding the movie itself)
+    # exclude the first one because the first one is the course itself
+    top_scores = sim_scores[1:n+1]
+    # get a list of index of the top scores
+    top_indices = [i[0] for i in top_scores]
+    return df.iloc[top_indices]['Course Name']
+
+
+[i for i in data['Course Name'].unique()]
+
+
+get_recommendations('Finance for Managers')
+
+
+df[df['Course Name'] == 'Python Programming Essentials'].index[0]
+# it has the cosine similarity with all the courses
+len(cosine_similarities[16])
+len(cosine_similarities[16]) == data.shape[0]
+top10 = sorted(
+    list(enumerate(cosine_similarities[16])), key=lambda x: x[1], reverse=True)[1:11]
+top_indices = [i[0] for i in top10]
+df.iloc[top_indices]['Course Name']
+
+
+df['Course Description']
+# save the data into a text file
+with open('data.txt', 'w') as f:
+    for item in df['Course Description']:
+        f.write(item)
+        # write a new line
+        f.write("\n")
