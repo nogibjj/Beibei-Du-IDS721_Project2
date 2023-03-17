@@ -47,7 +47,8 @@ minikube start
 cosine_similarities = pd.DataFrame(cosine_similarities, index=df['Course Name'], columns=df['Course Name'])
 cosine_similarities.head()
 cosine_similarities.to_csv('cosine_similarities.csv')
-- Run `cargo run --bin cousera_recommendation` locally
 ```
+- Run `cargo run --bin cousera_recommendation` locally
+
 ## Reference
 [1]. https://minikube.sigs.k8s.io/docs/start/
