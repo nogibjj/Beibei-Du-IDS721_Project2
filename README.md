@@ -13,7 +13,7 @@ Kubernetes based Continuous Delivery Create a customized Docker container
 4. Coding part
 5. Deployment
 * Planing doc: [doc] {https://docs.google.com/document/d/1SMkQSX9lCwID7ROtmD5sWQYg53w-REIM2b3GPReCgN4/edit}
-
+<img width="977" alt="Screen Shot 2023-03-16 at 9 07 51 PM" src="https://user-images.githubusercontent.com/60382493/225786419-12c49d16-ec44-4a68-81f2-a72a695560ce.png">
 ## Rust Setup
 ```
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
