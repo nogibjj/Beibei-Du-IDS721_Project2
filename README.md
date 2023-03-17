@@ -44,11 +44,20 @@ The following is when the image is created.
 <img width="1282" alt="Screen Shot 2023-03-16 at 10 17 40 PM" src="https://user-images.githubusercontent.com/60382493/225795253-ab4b3d7e-e950-4321-b05d-20313be837c6.png">
 
 ```
+kubectl create deployment my-app --image=registry.hub.docker.com/coursera_recommendation:latest
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64
 sudo install minikube-darwin-amd64 /usr/local/bin/minikube
 minikube start
 ```
 <img width="676" alt="Screen Shot 2023-03-16 at 10 32 38 PM" src="https://user-images.githubusercontent.com/60382493/225797458-41dcf8bf-9e14-454e-8fdf-683af33c5e54.png">
+- After running the following code block:
+```
+kubectl get services my-app
+kubectl port-forward service/my-app 7080:8080 
+minikube service my-app
+```
+<img width="1010" alt="Screen Shot 2023-03-16 at 10 36 20 PM" src="https://user-images.githubusercontent.com/60382493/225798006-1c01f17b-fb6c-4690-986b-9b8c5860c95f.png">
+
 
 
 ## Output Demo
