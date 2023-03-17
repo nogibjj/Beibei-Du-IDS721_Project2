@@ -41,11 +41,13 @@ minikube start
 - For instance, if you are currently taking the Cousera course: `Write A Feature Length Screenplay For Film Or Television`, then the top 3 suggested Coursera courses are: `Script Writing: Write a Pilot Episode for a TV or Web Series (Project-Centered Course)`, `Write Your First Novel`, and `Transmedia Writing`, where they have similar content in the courses.
 
 ## How to use
+- Clone this Repo
 - In my Repo, there is a file `make_it_simpler.ipynb`. In order to get the dataset needed for `main.rs`, the dataset is too large to push in Github Repo. The dataset is `cosine_similarities.csv`
 ```
 cosine_similarities = pd.DataFrame(cosine_similarities, index=df['Course Name'], columns=df['Course Name'])
 cosine_similarities.head()
 cosine_similarities.to_csv('cosine_similarities.csv')
+- Run `cargo run --bin cousera_recommendation` locally
 ```
 ## Reference
 [1]. https://minikube.sigs.k8s.io/docs/start/
