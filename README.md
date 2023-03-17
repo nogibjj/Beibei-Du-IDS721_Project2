@@ -68,3 +68,5 @@ cosine_similarities.to_csv('cosine_similarities.csv')
 [2]. https://github.com/kbknapp/rust-cli-template
 
 [3]. https://docs.docker.com/get-started/02_our_app/
+
+[4]. https://github.com/nogibjj/rust-mlops-template
