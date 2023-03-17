@@ -41,6 +41,7 @@ The following is when the image is created.
 
 ## Kubernetes Setup: minikube
 <img width="1205" alt="Screen Shot 2023-03-16 at 8 44 53 PM" src="https://user-images.githubusercontent.com/60382493/225783159-aac9603b-7891-46de-bba7-9cf2e5429ad3.png">
+<img width="1282" alt="Screen Shot 2023-03-16 at 10 17 40 PM" src="https://user-images.githubusercontent.com/60382493/225795253-ab4b3d7e-e950-4321-b05d-20313be837c6.png">
 
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64
