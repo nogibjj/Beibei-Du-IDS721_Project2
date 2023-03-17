@@ -31,9 +31,12 @@ open /Applications/Docker.app
 ```
 2. Build Docker Image
 ```
-docker build -t rmd_course .
+docker build -t coursera_recommendation:latest .
+# docker build -t rmd_course .
 docker run -p 8000:8000 rmd_course
 ```
+<img width="1310" alt="Screen Shot 2023-03-16 at 9 37 24 PM" src="https://user-images.githubusercontent.com/60382493/225789989-1b275872-a3d3-40a5-add9-82594d43a18b.png">
+
 ## Kubernetes Setup: minikube
 <img width="1205" alt="Screen Shot 2023-03-16 at 8 44 53 PM" src="https://user-images.githubusercontent.com/60382493/225783159-aac9603b-7891-46de-bba7-9cf2e5429ad3.png">
 
