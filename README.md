@@ -29,3 +29,11 @@ docker run -p 8000:8000 rmd_course
 ## Output Demo
 <img width="1088" alt="Screen Shot 2023-03-16 at 7 43 59 PM" src="https://user-images.githubusercontent.com/60382493/225776412-0ea2d46b-2c31-497b-8ac5-6f36be647082.png">
 - For instance, if you are currently taking the Cousera course: `Write A Feature Length Screenplay For Film Or Television`, then the top 3 suggested Coursera courses are: `Script Writing: Write a Pilot Episode for a TV or Web Series (Project-Centered Course)`, `Write Your First Novel`, and `Transmedia Writing`, where they have similar content in the courses.
+
+## How to use
+- In my Repo, there is a file `make_it_simpler.ipynb`. In order to get the dataset needed for `main.rs`, the dataset is too large to push in Github Repo. The dataset is `cosine_similarities.csv`
+```
+cosine_similarities = pd.DataFrame(cosine_similarities, index=df['Course Name'], columns=df['Course Name'])
+cosine_similarities.head()
+cosine_similarities.to_csv('cosine_similarities.csv')
+```
