@@ -52,4 +52,5 @@ cosine_similarities.to_csv('cosine_similarities.csv')
 
 ## Reference
 [1]. https://minikube.sigs.k8s.io/docs/start/
+
 [2]. https://github.com/kbknapp/rust-cli-template
