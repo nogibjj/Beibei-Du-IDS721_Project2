@@ -4,6 +4,7 @@ Kubernetes based Continuous Delivery Create a customized Docker container
 - Push image to DockerHub, or Cloud based Container Registery (ECR)
 - Project should deploy automatically to Kubernetes cluster
 - Deployment should be to some form of Kubernetes service (can be hosted like Google Cloud Run or Amazon EKS, etc)
+<img width="615" alt="Screen Shot 2023-03-16 at 9 01 56 PM" src="https://user-images.githubusercontent.com/60382493/225785759-2564ac75-b374-42ad-ba05-d89eabc7901c.png">
 
 ## Planing
 1. Decided a topic: Recommender System on Cousera courses
