@@ -23,7 +23,15 @@ cargo new ids721_proj2_cousera
 ```
 docker build -t rmd_course .
 docker run -p 8000:8000 rmd_course
+```
 
+## Kubernetes Setup: minikube
+<img width="1205" alt="Screen Shot 2023-03-16 at 8 44 53 PM" src="https://user-images.githubusercontent.com/60382493/225783159-aac9603b-7891-46de-bba7-9cf2e5429ad3.png">
+
+```
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64
+sudo install minikube-darwin-amd64 /usr/local/bin/minikube
+minikube start
 ```
 
 ## Output Demo
