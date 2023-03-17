@@ -48,6 +48,8 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin
 sudo install minikube-darwin-amd64 /usr/local/bin/minikube
 minikube start
 ```
+<img width="676" alt="Screen Shot 2023-03-16 at 10 32 38 PM" src="https://user-images.githubusercontent.com/60382493/225797458-41dcf8bf-9e14-454e-8fdf-683af33c5e54.png">
+
 
 ## Output Demo
 <img width="1088" alt="Screen Shot 2023-03-16 at 7 43 59 PM" src="https://user-images.githubusercontent.com/60382493/225776412-0ea2d46b-2c31-497b-8ac5-6f36be647082.png">
